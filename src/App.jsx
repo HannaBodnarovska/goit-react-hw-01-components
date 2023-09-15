@@ -1,7 +1,7 @@
 import { Profile } from "components/Profile/Profile";
 
 import user from './user.json';
-import friend from './friends.json';
+// import friend from './friends.json';
 
 export const App = () => {
   return (
