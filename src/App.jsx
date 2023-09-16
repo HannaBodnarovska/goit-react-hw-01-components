@@ -1,9 +1,10 @@
 import { Profile } from "components/Profile/Profile.jsx";
 import {Statistics} from "components/Statistics/Statistics.jsx";
+import { FriendList } from "components/Friends/Friends";
 
 import user from './user.json';
 import data from './data.json';
-// import friend from './friends.json';
+import friends from './friends.json';
 
 export const App = () => {
   return (
@@ -15,7 +16,8 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+        gap: '20px',
       }}
     >
       <Profile
@@ -28,6 +30,8 @@ export const App = () => {
 
       
       <Statistics title="Upload stats" stats={data} />
+
+      <FriendList friends={friends} />
 
     </div>
   );
